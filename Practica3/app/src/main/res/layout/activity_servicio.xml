@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_servicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_green_dark"
+    tools:context="es.ujaen.git.practica2.Servicio">
+
+    <TextView
+        android:text="@string/contstock"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contstock"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/botonstock"
+        android:layout_marginTop="99dp" />
+
+    <Button
+        android:text="@string/botonstock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#ef9a9a"
+        android:id="@+id/botonstock"
+        android:layout_marginStart="18dp"
+        android:layout_alignBaseline="@+id/contstock"
+        android:layout_alignBottom="@+id/contstock"
+        android:layout_alignParentStart="true"
+        android:onClick="stock" />
+
+    <TextView
+        android:text="@string/cabeceraserv"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonstock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cabeceraserv" />
+    <Button
+        android:text="@string/frang_info"
+        android:drawableLeft="@drawable/information_variant"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="58dp"
+        android:id="@+id/botoninfo" />
+
+</RelativeLayout>

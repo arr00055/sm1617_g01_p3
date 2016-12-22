@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HosteRed</string>
+    <string name="auth_name">Nombre:</string>
+    <string name="auth_hint_user">Introduzca Usuario</string>
+    <string name="auth_pass">Clave:</string>
+    <string name="auth_ip">Dirección IP:</string>
+    <string name="auth_hint_pass">Coloque Clave</string>
+    <string name="auth_hint_ip">Dirección del Servidor</string>
+    <string name="auth_port">Puerto:</string>
+    <string name="auth_hint_port">Puerto del Servidor</string>
+    <string name="auth_enviar">Enviar</string>
+    <string name="conex_greeting">Autenticando.</string>
+    <string name="servicio_hola">Bienvenido.</string>
+    <string name="contstock">Control de Stock</string>
+    <string name="botonstock">Stock</string>
+    <string name="cabeceraserv">Servicios</string>
+    <string name="frang_info">Acerca de</string>
+    <string name="info_autores">Autor1: Alejandro Romo Rivero</string>
+    <string name="info_autores2">Autor2: Sergio García Solano</string>
+    <string name="info_uni">Escuela Politécnica Superior de Linares</string>
+</resources>
