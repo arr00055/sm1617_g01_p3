@@ -17,53 +17,39 @@
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
         android:id="@+id/stock_title" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/stock_title"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="18dp"
         android:id="@+id/stock_name"
-        android:hint="@string/stock_hint_name" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_below="@+id/stock_name"
-        android:layout_alignStart="@+id/stock_name"
-        android:layout_marginTop="15dp"
-        android:id="@+id/stock_proveed"
-        android:hint="@string/stock_hint_prove" />
+        android:hint="@string/stock_hint_name"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/stock_title"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:layout_below="@+id/stock_proveed"
-        android:layout_alignEnd="@+id/stock_proveed"
-        android:layout_marginTop="14dp"
         android:id="@+id/stock_vact"
-        android:hint="@string/stock_hint_vact" />
+        android:hint="@string/stock_hint_vact"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/stock_name" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:layout_below="@+id/stock_vact"
-        android:layout_alignStart="@+id/stock_vact"
-        android:layout_marginTop="13dp"
         android:id="@+id/stock_vmin"
-        android:hint="@string/stock_hint_vmin" />
+        android:hint="@string/stock_hint_vmin"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/stock_proveed" />
 
     <Button
         android:text="@string/stock_boton"
@@ -71,8 +57,19 @@
         android:backgroundTint="#ef9a9a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/stock_vmin"
+        android:id="@+id/stock_boton"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:id="@+id/stock_boton" />
+        android:layout_marginBottom="22dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/stock_proveed"
+        android:hint="@string/stock_hint_prove"
+        android:layout_marginEnd="26dp"
+        android:layout_alignBaseline="@+id/stock_name"
+        android:layout_alignBottom="@+id/stock_name"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

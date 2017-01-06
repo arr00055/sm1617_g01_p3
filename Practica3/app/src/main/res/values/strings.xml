@@ -19,4 +19,10 @@
     <string name="info_autores">Autor1: Alejandro Romo Rivero</string>
     <string name="info_autores2">Autor2: Sergio García Solano</string>
     <string name="info_uni">Escuela Politécnica Superior de Linares</string>
+    <string name="titulo_stock">Introducir Producto:</string>
+    <string name="stock_hint_name">Nombre del Producto</string>
+    <string name="stock_hint_prove">Introduzca Proveedor</string>
+    <string name="stock_hint_vact">Cantidad de Producto</string>
+    <string name="stock_hint_vmin">Valor Mínimo Producto</string>
+    <string name="stock_boton">Introducir</string>
 </resources>

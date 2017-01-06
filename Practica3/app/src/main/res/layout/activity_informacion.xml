@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@android:color/holo_green_dark"
-    tools:context="es.ujaen.git.practica2.Informacion">
+    tools:context="es.ujaen.git.practica3.Informacion">
 
     <ImageButton
         android:layout_width="wrap_content"

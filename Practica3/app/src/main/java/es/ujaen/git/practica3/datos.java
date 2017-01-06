@@ -1,4 +1,4 @@
-package sm1617ej2;
+package es.ujaen.git.practica3;
 /**Created on 13/11/2016.
  * @author Alejandro Romo Rivero.
  */
@@ -6,8 +6,6 @@ package sm1617ej2;
 /**La clase datos sera la encargada de modelar los datos para el servicio de "Control de Stock" de la aplicacion, esta servicio
  * requiere de los campos: [Nombre del producto, proveedor, valor actual y valor minimo] y seran los que modele esta clase.
  * La clase es declarada como public siendo una pieza de codigo visible en todos los niveles.
- * Para facilitar la busqueda en BD y para evitar conflictos por nombres o proveedores se introduce el campo identificador, ademas de los
- * campos que son necesarios para modelar el control de Stock.
  */
 public class datos{
     //Atributos de la clase datos.
@@ -17,7 +15,7 @@ public class datos{
     protected String mProveedor="";
     protected int    mValoractual=Valor_Inicial;
     protected int    mValorminimo=Valor_Inicial;
-    protected int    mIdentificador=Valor_Inicial;
+
 
     /**
      *Constructor de la clase datos.
@@ -25,20 +23,19 @@ public class datos{
      * @param proveedor      Cadena que se pasa al constructor de la clase datos con el nombre del proveedor asociado al producto.
      * @param valoractual    Entero que se pasa al constructor de la clase datos con el valor actual del producto en stock.
      * @param valorminimo    Entero que se pasa al constructor de la clase datos con el valor minimo del producto que se debe tener.
-     * @param identificador  Entero que se pasa al constructor de la clase datos con el identificador que se generara para cada producto.
      * Una vez se le pasan estos datos al constructor cuando se le llama en el codigo, guarda aqui los valores que se le han pasado
      * entre () y los almacena en las variables que estan declaradas en la clase y con los metodos de la clase se podra acceder a estos
      * valores cuando lo necesita.
      */
-    public datos(String nombreproducto,String proveedor,int valoractual, int valorminimo, int identificador){
+    public datos(String nombreproducto,String proveedor,int valoractual, int valorminimo){
 
         mNombreproducto=nombreproducto;
         mProveedor=proveedor;
         mValoractual=valoractual;
         mValorminimo=valorminimo;
-        mIdentificador=identificador;
 
     }//Fin del constructor de la clase datos.
+
 
     //Los metodos get: Me permiten obtener el valor de los diferentes campos que se modelan en la clase datos.
     //Los metodos set: Me permiten introducir un determinado valor que pase al llamar al metodo entre sus () y que lo almacene en
@@ -105,30 +102,15 @@ public class datos{
     }
 
     /**
-     *  Metodo getIdentificador
-     *  @return mIdentificador.
-     */
-    public int getIdentificador(){
-        return mIdentificador;
-    }
-
-    /**
-     *  Metodo setIdentificador
-     */
-    public void setIdentificador(int identificador){
-        mIdentificador=identificador;
-    }
-
-    /**
      * Metodo toString()
      * Este metodo es el encargado de sacar como una cadena cada uno de los campos que debemos enviar en nuestro mensaje del protocolo,
      * correctamente formateado segun la notacion ABNF para nuestro mensaje de protocolo. La clase mensajes llamara a este metodo para
      * enviar cada correspondiente cabecera con los datos correctamente ordenados.
-     * @return mNombreproducto+" "+mProveedor+" "+mIdentificador+" "+mValoractual+" "+mValorminimo;
+     * @return mNombreproducto+" "+mProveedor+" "+mValoractual+" "+mValorminimo;
      */
     @Override
     public String toString(){
-        return mNombreproducto+" "+mProveedor+" "+mIdentificador+" "+mValoractual+" "+mValorminimo;
+        return mNombreproducto+" "+mProveedor+" "+mValoractual+" "+mValorminimo;
     }
 
 }//Fin de la clase datos.

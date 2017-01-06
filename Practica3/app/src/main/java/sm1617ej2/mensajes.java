@@ -4,6 +4,8 @@ package sm1617ej2;
  * @author Alejandro Romo Rivero.
  */
 
+import es.ujaen.git.practica3.datos;
+
 /**
  * La clase mensajes sera la encargada de formatear correctamente los mensajes del protocolo tal y como indica la notacion ABNF para
  * nuestro servicio de control de stock. Para ello nuestra clase contara con unas constantes necesarias para el correcto formateo del
@@ -22,7 +24,7 @@ public class mensajes {
     public static final String SP = " ";
 
     protected String header = " ";
-    protected datos  data   = null;
+    protected datos data   = null;
 
     /**
      * Constructor de la clase mensajes.
