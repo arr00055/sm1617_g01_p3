@@ -156,6 +156,9 @@ public class ConexActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putString("Sesion",sesionid[1]);
                 editor.putString("Tiempoexpira",expira[1]);
+                editor.putString("Usuario", User);
+                editor.putString("Clave", Pass);
+                editor.putString("Ip", IP);
                 editor.commit();
 
             } catch (IOException err){ //Fin del try y captura de la excepción.

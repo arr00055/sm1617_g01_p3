@@ -1,4 +1,4 @@
-package sm1617ej2;
+package es.ujaen.git.practica3;
 
 /**Created on 13/11/2016.
  * @author Alejandro Romo Rivero.
