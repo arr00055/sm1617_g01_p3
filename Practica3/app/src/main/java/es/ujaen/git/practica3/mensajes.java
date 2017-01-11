@@ -12,7 +12,7 @@ import es.ujaen.git.practica3.datos;
  * mensaje de protocolo. Y con un switch dentro del constructor de nuestra clase que sera el encargado de seleccionar la cabecera
  * correspondiente en funcion del tipo de mensaje o peticion que necesitemos realizar. De forma que, si necesitamos Introducir un
  * nuevo producto se usara la header correspondiente INTRO, MODIF para modificar un producto y ELIMI para eliminar un producto.
- * Finalmente, se crea una clase tobyteArray(), la cual devuelve un array de byte con la informacion adecuada del mensaje del
+ * Finalmente, se crea una clase tobyteArray(), la cual devuelve un string con la informacion adecuada del mensaje del
  * protocolo, para ello introduce en una cadena la cabecera formateada adecuadamente junto con los datos que son llamados de
  * la clase datos donde se cuentan con los metodos y el formateo adecuado para los datos necesarios.
  */
@@ -51,10 +51,10 @@ public class mensajes {
 
     /**
      * Metodo tobyteArray()
-     * @return m.getBytes()
+     * @return m
      */
-    public byte[] tobyteArray(){
+    public String tobyteArray(){
         String m = header+SP+data.toString()+CRLF;
-        return m.getBytes();
+        return m;
     }//Fin de la clase tobyteArray.
 }//Fin de la clase mensajes.

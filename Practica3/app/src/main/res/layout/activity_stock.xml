@@ -65,14 +65,36 @@
         android:id="@+id/stock_vmin"
         android:hint="@string/stock_hint_vmin" />
 
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/resstock" />
+
     <Button
         android:text="@string/stock_boton"
         android:textColor="@android:color/black"
         android:backgroundTint="#ef9a9a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/stock_boton"
         android:layout_below="@+id/stock_vmin"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/stock_res_estado"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stock_boton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:id="@+id/stock_boton" />
+        android:layout_marginTop="19dp"
+        android:id="@+id/stockresestado" />
 </RelativeLayout>

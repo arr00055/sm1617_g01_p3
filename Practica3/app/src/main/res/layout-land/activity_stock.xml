@@ -51,17 +51,6 @@
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/stock_proveed" />
 
-    <Button
-        android:text="@string/stock_boton"
-        android:textColor="@android:color/black"
-        android:backgroundTint="#ef9a9a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/stock_boton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,4 +61,37 @@
         android:layout_alignBaseline="@+id/stock_name"
         android:layout_alignBottom="@+id/stock_name"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/stock_boton"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#ef9a9a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stock_boton"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/stock_vmin"
+        android:layout_marginEnd="22dp" />
+
+    <TextView
+        android:text="@string/stock_res_estado"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stockresestado"
+        android:layout_alignTop="@+id/stock_boton"
+        android:layout_alignStart="@+id/stock_vact" />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/resstock"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
